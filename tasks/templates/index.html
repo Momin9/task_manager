@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p>Organize your tasks effectively and efficiently!</p>
+        </header>
+
+        <div class="task-input">
+            <h2 id="taskFormTitle">Add New Task</h2>
+            <input type="text" id="taskTitle" placeholder="Task Title" required>
+            <textarea id="taskDescription" placeholder="Task Description"></textarea>
+            <button id="taskSubmitBtn" onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="task-list">
+            <h2>Tasks</h2>
+            <ul id="tasksList"></ul>
+        </div>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
