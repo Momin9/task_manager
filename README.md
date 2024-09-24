@@ -23,27 +23,41 @@ Ensure that you have the following installed on your machine:
    git clone https://github.com/Momin9/task_manager.git
 
 2. **Navigate to the Project Directory**
+   ```sh
     cd task_manager
     
 
 1. **Create a Virtual Environment**
+   
     On Linux/Mac:
+      
         python3 -m venv .venv
     On Windows:
+   
         python -m venv .venv
 
-2. **Activate the Virtual Environment**
+3. **Activate the Virtual Environment**
+   
     On Linux/Mac:
+
         source .venv/bin/activate
+
     On Windows:
+
         .venv\Scripts\activate
 
-3. **Install Dependencies**
+5. **Install Dependencies**
+
+   ```sh
     pip install -r requirements.txt
 
-4. **Run Migrations**
+7. **Run Migrations**
+
+   ```sh
     python manage.py migrate
 
-5. **Run the Project**
+9. **Run the Project**
+
+    ```sh
     python manage.py runserver
 
