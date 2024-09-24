@@ -27,7 +27,7 @@ Ensure that you have the following installed on your machine:
     cd task_manager
     
 
-1. **Create a Virtual Environment**
+3. **Create a Virtual Environment**
    
     On Linux/Mac:
       
@@ -36,7 +36,7 @@ Ensure that you have the following installed on your machine:
    
         python -m venv .venv
 
-3. **Activate the Virtual Environment**
+4. **Activate the Virtual Environment**
    
     On Linux/Mac:
 
@@ -51,12 +51,12 @@ Ensure that you have the following installed on your machine:
    ```sh
     pip install -r requirements.txt
 
-7. **Run Migrations**
+6. **Run Migrations**
 
    ```sh
     python manage.py migrate
 
-9. **Run the Project**
+7. **Run the Project**
 
     ```sh
     python manage.py runserver
