@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
+<div class="container">
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href=" ">Task</a>
+      <a href="logout/" class="btn btn-secondary float-end">Logout</a>
+    </div>
+  </nav>
+</div>
 <div class="container mt-3">
     <header class="text-center mb-4">
         <h1>Task Manager</h1>
@@ -102,8 +110,8 @@
                         <td>${task.description}</td>
                         <td>${task.is_completed ? 'Completed' : 'Pending'}</td>
                         <td>
-                            <button class="btn btn-secondary" onclick="editTask('${task.id}')">Edit</button>
-                            <button class="btn btn-danger" onclick="deleteTask('${task.id}')">Delete</button>
+                            <a class="btn btn-secondary" onclick="editTask('${task.id}')"><i class="bi bi-pen"></i></a>
+                            <a class="btn btn-danger" onclick="deleteTask('${task.id}')"><i class="bi bi-trash"></i></a>
                         </td>
                     </tr>
                 `);
